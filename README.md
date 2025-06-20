@@ -57,6 +57,26 @@ Here's a minimal setup for the script to work properly:
 
 <script src="script.js"></script>
 ```
+🗃️ Example Tasks
+```js
+const todoList = [
+  { name: "cook", dueDate: "2025-05-31" },
+  { name: "clean", dueDate: "2025-05-31" },
+];
+```
+🚧 Future Enhancements
+Save tasks in localStorage
 
+Edit existing tasks
+
+Sort tasks by due date
+
+Style UI with modern CSS or frameworks
+
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+🙌 Acknowledgments
+Thanks for checking out this project! Built for learning and fun.
 
 
