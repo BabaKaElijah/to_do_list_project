@@ -13,11 +13,6 @@ A simple, interactive to-do list built using **vanilla JavaScript**. This app al
 
 ---
 
-## 📸 Demo
-
-![To-Do List Screenshot](screenshot.png) <!-- Optional: Replace with your actual image file or URL -->
-
----
 
 ## 🧠 How It Works
 
