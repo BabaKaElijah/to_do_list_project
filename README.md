@@ -67,11 +67,11 @@ const todoList = [
 🚧 Future Enhancements
 Save tasks in localStorage
 
-Edit existing tasks
+- Edit existing tasks
 
-Sort tasks by due date
+- Sort tasks by due date
 
-Style UI with modern CSS or frameworks
+- Style UI with modern CSS or frameworks
 
 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
