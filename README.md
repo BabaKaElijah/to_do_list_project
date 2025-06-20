@@ -42,5 +42,21 @@ A simple, interactive to-do list built using **vanilla JavaScript**. This app al
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
 
+   Open index.html in a web browser.
+
+Start adding and managing your tasks!
+
+🧪 Sample HTML
+Here's a minimal setup for the script to work properly:
+```js
+<input placeholder="Task name" class="js-name-input" />
+<input type="date" class="js-due-date-input" />
+<button class="js-add-todo-button">Add</button>
+
+<div class="js-todo-list"></div>
+
+<script src="script.js"></script>
+```
+
 
 
