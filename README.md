@@ -64,9 +64,7 @@ Edit
 
 <script src="script.js"></script>
 🗃️ Example Tasks
-js
-Copy
-Edit
+
 const todoList = [
   { name: "cook", dueDate: "2025-05-31" },
   { name: "clean", dueDate: "2025-05-31" },
