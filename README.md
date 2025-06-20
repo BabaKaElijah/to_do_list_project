@@ -48,7 +48,7 @@ Start adding and managing your tasks!
 
 🧪 Sample HTML
 Here's a minimal setup for the script to work properly:
-```js
+```html
 <input placeholder="Task name" class="js-name-input" />
 <input type="date" class="js-due-date-input" />
 <button class="js-add-todo-button">Add</button>
