@@ -2,6 +2,8 @@
 
 A simple, interactive to-do list built using **vanilla JavaScript**. This app allows users to add tasks with due dates and delete them dynamically. No external libraries or frameworks are required.
 
+![To Do List Screenshot](todolistscreenshot.PNG) <!-- Optional: Add a screenshot of your app -->
+
 ---
 
 ## 🚀 Features
