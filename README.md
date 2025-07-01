@@ -61,6 +61,69 @@ const todoList = [
   { name: "clean", dueDate: "2025-05-31" },
 ];
 ```
+## ✅ Simple To-Do List App Full Logic (JavaScript)
+
+This is a lightweight to-do list app where users can add tasks with due dates and delete them as needed. The task list is rendered dynamically using JavaScript.
+
+```javascript
+// Initial list of tasks
+const todoList = [
+  { name: "cook", dueDate: "2025-05-31" },
+  { name: "clean", dueDate: "2025-05-31" },
+];
+
+// Render the to-do list on page load
+renderTodoList();
+
+function renderTodoList() {
+  let todoListHTML = "";
+
+  // Loop through tasks and generate HTML
+  todoList.forEach((todoObject, index) => {
+    const { name, dueDate } = todoObject;
+    const html = `
+      <div>${name}</div>
+      <div>${dueDate}</div> 
+      <button class="delete-todo-button js-delete-todo-button">Delete</button>   
+    `;
+    todoListHTML += html;
+  });
+
+  // Display all tasks in the container
+  document.querySelector(".js-todo-list").innerHTML = todoListHTML;
+
+  // Add click event listeners to each delete button
+  document.querySelectorAll('.js-delete-todo-button')
+    .forEach((deleteButton, index) => {
+      deleteButton.addEventListener('click', () => {
+        todoList.splice(index, 1);  // Remove item from the list
+        renderTodoList();           // Re-render updated list
+      });
+    });
+}
+
+// Handle "Add" button click
+document.querySelector('.js-add-todo-button').addEventListener('click', () => {
+  addTodo();
+});
+
+function addTodo() {
+  const inputElement = document.querySelector(".js-name-input");
+  const name = inputElement.value;
+
+  const dateInputElement = document.querySelector(".js-due-date-input");
+  const dueDate = dateInputElement.value;
+
+  // Add the new task to the array
+  todoList.push({ name, dueDate });
+
+  // Clear input field
+  inputElement.value = "";
+
+  // Update the task list
+  renderTodoList();
+}
+```
 🚧 Future Enhancements
 Save tasks in localStorage
 ```
